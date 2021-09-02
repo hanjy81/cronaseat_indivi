@@ -29,7 +29,7 @@ import java.util.List;
         
             // siege - circuit break
                 try {
-                     Thread.currentThread().sleep((long) (220 + Math.random() * 220));
+                     Thread.currentThread().sleep((long) (400 + Math.random() * 220));
               } catch (InterruptedException e) {
                     e.printStackTrace();
               } 
