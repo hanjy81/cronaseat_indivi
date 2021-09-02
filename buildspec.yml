@@ -91,10 +91,10 @@ phases:
                #       - -c          #liveness
                #       - touch /tmp/test; sleep 30; rm -rf /tmp/test; sleep 600  #liveness   
                     resources:
-               #       limits:       #HPA
-               #         cpu: 500m   #HPA
-               #       requests:     #HPA
-               #         cpu: 200m   #HPA
+                      limits:       #HPA
+                        cpu: 500m   #HPA
+                      requests:     #HPA
+                        cpu: 200m   #HPA
                     readinessProbe:
                       httpGet:
                         path: /actuator/health
