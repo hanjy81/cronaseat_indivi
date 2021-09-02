@@ -27,12 +27,12 @@ import java.util.List;
               
               Cronaseat cronaseat = cronaseatRepository.findByseatId(seatId);
         
-            /* siege - circuit break
+            // siege - circuit break
                 try {
                      Thread.currentThread().sleep((long) (220 + Math.random() * 220));
               } catch (InterruptedException e) {
                     e.printStackTrace();
-              }*/ 
+              } 
               // circuit break end
 
               if(cronaseat.getReservableSeat() >= seatNum) {
